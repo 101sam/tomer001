@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="init()">
+    <div>
+        <h1>Tomer Maruani Minesweeper</h1>
+        <h2 class="victory"></h2>
+        <p class="lives"></p>
+        <button class="safe-click" onclick="safeClick(this)">safe Click</button>
+    </div>
+    <table border="1" cellpadding="10">
+        <tbody class="board">
+        </tbody>
+    </table>
+    <div class=b uttons>
+        <button class="modes-btn" onclick="restartGame(this)">Restart</button>
+        <button class="modes-btn" onclick="easyMode(this)">Easy</button>
+        <button class="modes-btn" onclick="mediumMode(this)">Medium</button>
+        <button class="modes-btn" onclick="hardMode(this)">Hard</button>
+        <script src="js/util.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/mines.js"></script>
+    </div>
+</body>
+
+</html>
